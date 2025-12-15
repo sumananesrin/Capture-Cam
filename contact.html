@@ -256,16 +256,14 @@
         .brands-grid img {
             max-height: 60px;
             margin: 15px;
-            filter: grayscale(100%);
-            opacity: 0.7;
+            filter: none;
+            opacity: 1;
             transition: all 0.3s ease;
             cursor: pointer;
         }
 
         .brands-grid img:hover {
-            filter: grayscale(0%);
-            opacity: 1;
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
 
         /* Mobile Styles */
@@ -306,11 +304,14 @@
             }
 
             .brands-grid img {
-                width: calc(50% - 30px);
-                /* 2 items per row minus gap/margin */
-                max-height: 25px;
-                margin: 5px;
+                width: 100%;
+                max-width: 150px;
+                max-height: 40px;
+                margin: 10px auto;
+                display: block;
                 object-fit: contain;
+                filter: none !important;
+                opacity: 1 !important;
             }
 
             .brands-grid span {
